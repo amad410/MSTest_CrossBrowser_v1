@@ -19,6 +19,7 @@ namespace FireFoxTest
         [TestInitialize]
         public void Setup()
         {
+            //change the paths to fit your local paths
             service = FirefoxDriverService.CreateDefaultService(@"C:\Users\antwan.maddox\source\repos\UnitTestProject1\Drivers\");
             service.FirefoxBinaryPath = @"C:\Program Files\Mozilla Firefox\firefox.exe";
             driver = new FirefoxDriver(service);
